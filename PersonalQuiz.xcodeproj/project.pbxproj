@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4A71352A2694B1009817F1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71342A2694B1009817F1 /* Question.swift */; };
 		2B955E9F2A1B88A4007AAE66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B955E9E2A1B88A4007AAE66 /* AppDelegate.swift */; };
 		2B955EA12A1B88A4007AAE66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B955EA02A1B88A4007AAE66 /* SceneDelegate.swift */; };
 		2B955EA32A1B88A4007AAE66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B955EA22A1B88A4007AAE66 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B4A71342A2694B1009817F1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2B955E9B2A1B88A4007AAE66 /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B955E9E2A1B88A4007AAE66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B955EA02A1B88A4007AAE66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		2B955EB32A1B8AB7007AAE66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B4A71342A2694B1009817F1 /* Question.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B955EA32A1B88A4007AAE66 /* ViewController.swift in Sources */,
+				2B4A71352A2694B1009817F1 /* Question.swift in Sources */,
 				2B955E9F2A1B88A4007AAE66 /* AppDelegate.swift in Sources */,
 				2B955EA12A1B88A4007AAE66 /* SceneDelegate.swift in Sources */,
 			);
