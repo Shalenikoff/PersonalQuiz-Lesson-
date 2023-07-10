@@ -99,24 +99,36 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="ibP-Tw-dw7" eventType="touchUpInside" id="qoM-v4-jJ8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHk-i2-qde">
                                         <rect key="frame" x="140.5" y="54" width="54" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="ibP-Tw-dw7" eventType="touchUpInside" id="91N-cS-N1u"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-90-CEb">
                                         <rect key="frame" x="140.5" y="108" width="54" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="ibP-Tw-dw7" eventType="touchUpInside" id="fHf-tp-9hy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-5K-LSt">
                                         <rect key="frame" x="140.5" y="162" width="54" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="ibP-Tw-dw7" eventType="touchUpInside" id="OGo-0M-ue8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -183,6 +195,9 @@
                                         <rect key="frame" x="0.0" y="156" width="335" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Write answer"/>
+                                        <connections>
+                                            <action selector="multipleButtonPressed" destination="ibP-Tw-dw7" eventType="touchUpInside" id="3th-HE-S3G"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -214,6 +229,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Write answer"/>
+                                        <connections>
+                                            <action selector="rangedButtonPressed" destination="ibP-Tw-dw7" eventType="touchUpInside" id="jef-YY-jXj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -259,6 +277,24 @@
                     </view>
                     <navigationItem key="navigationItem" title="Question №" id="8B0-nh-8El"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="xPO-af-hmn" id="nVv-pd-moB"/>
+                        <outlet property="rangedSlider" destination="SSU-4q-3Oy" id="gQf-bk-yLE"/>
+                        <outlet property="rangedStackView" destination="hT8-wb-W1k" id="6Ul-uZ-KZT"/>
+                        <outlet property="singleStackView" destination="OVF-p1-eb9" id="X96-32-yot"/>
+                        <outletCollection property="singleButtons" destination="J3C-sx-Iwy" collectionClass="NSMutableArray" id="T6S-e6-Mhg"/>
+                        <outletCollection property="singleButtons" destination="CHk-i2-qde" collectionClass="NSMutableArray" id="Idg-g8-52a"/>
+                        <outletCollection property="singleButtons" destination="1e6-90-CEb" collectionClass="NSMutableArray" id="Apn-ZD-dU9"/>
+                        <outletCollection property="singleButtons" destination="ds2-5K-LSt" collectionClass="NSMutableArray" id="IR2-ak-6VO"/>
+                        <outletCollection property="multipleLabels" destination="qMo-w8-d6J" collectionClass="NSMutableArray" id="DB1-y4-irM"/>
+                        <outletCollection property="multipleLabels" destination="V2Q-bG-NKp" collectionClass="NSMutableArray" id="Qns-DJ-Mie"/>
+                        <outletCollection property="multipleLabels" destination="Si0-Kp-dXc" collectionClass="NSMutableArray" id="bqW-un-F2X"/>
+                        <outletCollection property="multipleLabels" destination="cCT-S9-Tq3" collectionClass="NSMutableArray" id="pp3-Pu-elC"/>
+                        <outletCollection property="multipleSwitches" destination="RYz-Hx-XlJ" collectionClass="NSMutableArray" id="4pd-G1-eVN"/>
+                        <outletCollection property="multipleSwitches" destination="hPu-TF-tWw" collectionClass="NSMutableArray" id="7sO-oi-DFD"/>
+                        <outletCollection property="multipleSwitches" destination="jdy-O1-Vp4" collectionClass="NSMutableArray" id="4EV-VY-0fi"/>
+                        <outletCollection property="multipleSwitches" destination="qwS-6h-nF7" collectionClass="NSMutableArray" id="zZN-Qb-prw"/>
+                        <outletCollection property="rangedLabels" destination="UXC-Da-tjP" collectionClass="NSMutableArray" id="VHc-un-O59"/>
+                        <outletCollection property="rangedLabels" destination="BO5-mV-Fmk" collectionClass="NSMutableArray" id="SPd-CH-VFI"/>
                         <segue destination="rGL-LM-ikP" kind="show" identifier="showResult" id="wXC-By-PBt"/>
                     </connections>
                 </viewController>
