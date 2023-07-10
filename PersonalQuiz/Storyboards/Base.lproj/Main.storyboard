@@ -256,12 +256,6 @@
                             <constraint firstItem="U8V-cw-Ql0" firstAttribute="leading" secondItem="Idz-0a-w1d" secondAttribute="leading" constant="20" id="nO1-IA-nJJ"/>
                             <constraint firstItem="Idz-0a-w1d" firstAttribute="trailing" secondItem="xPO-af-hmn" secondAttribute="trailing" constant="20" id="zDe-nd-OTE"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="OVF-p1-eb9"/>
-                                <exclude reference="xPO-af-hmn"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Question №" id="8B0-nh-8El"/>
                     <connections>
@@ -307,7 +301,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="y5P-Kk-LBc">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="kaS-xo-2c3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="kaS-xo-2c3">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="rGL-LM-ikP" id="Wf8-XV-ULP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R02-za-sKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
