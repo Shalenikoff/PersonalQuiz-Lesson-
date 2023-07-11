@@ -278,6 +278,8 @@
                     <navigationItem key="navigationItem" title="Question №" id="8B0-nh-8El"/>
                     <connections>
                         <outlet property="multipleStackView" destination="xPO-af-hmn" id="nVv-pd-moB"/>
+                        <outlet property="questionLabel" destination="U8V-cw-Ql0" id="Zmj-w3-sxd"/>
+                        <outlet property="questionProgressView" destination="Ae4-b4-bmb" id="fdY-xy-PJZ"/>
                         <outlet property="rangedSlider" destination="SSU-4q-3Oy" id="gQf-bk-yLE"/>
                         <outlet property="rangedStackView" destination="hT8-wb-W1k" id="6Ul-uZ-KZT"/>
                         <outlet property="singleStackView" destination="OVF-p1-eb9" id="X96-32-yot"/>
