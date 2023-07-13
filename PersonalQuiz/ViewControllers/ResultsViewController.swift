@@ -9,6 +9,11 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    //MARK: Outlets
+    @IBOutlet var resultOfAsnwersLabel: UILabel!
+    @IBOutlet var descriptionResultLabel: UILabel!
+    
+    //MARK: Lifecycle
     var questionAnswers: [Answer] = []
     
     override func viewDidLoad() {
@@ -17,9 +22,24 @@ class ResultsViewController: UIViewController {
     }
     
 
+    
+    //MARK: Actions
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
-   
+}
 
+//MARK: Private methods
+extension ResultsViewController {
+    
+    private func rere() {
+        
+    }// функция подсчета количества встречающихся животных в массиве ответов
+    
+    private func rerer() {
+        
+    }// функция вычленения наиболее часто встречающихся ответов
+
+
+    
 }
