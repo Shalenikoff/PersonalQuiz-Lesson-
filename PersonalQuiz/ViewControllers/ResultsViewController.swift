@@ -19,9 +19,9 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(questionAnswers)
+        setHidesBackButton(true, animated: false)
+        
     }
-    
-
     
     //MARK: Actions
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
@@ -40,6 +40,12 @@ extension ResultsViewController {
         
     }// функция вычленения наиболее часто встречающихся ответов
 
+    private func rererr() {
+        
+    }// функция изменения лейбла resultOfAnswersLabel
 
+    private func setHidesBackButton (_ hidesBackButton: Bool, animated: Bool) {
+        self.navigationItem.hidesBackButton = true
+    }
     
 }
