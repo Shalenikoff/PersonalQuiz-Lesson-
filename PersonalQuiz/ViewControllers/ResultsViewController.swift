@@ -18,9 +18,8 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(questionAnswers)
+        printResultsOfAnswers()
         setHidesBackButton(true, animated: false)
-        
     }
     
     //MARK: Actions
@@ -43,9 +42,22 @@ extension ResultsViewController {
     private func rererr() {
         
     }// функция изменения лейбла resultOfAnswersLabel
+    
+    // логика реализаци
+    //создаем свойство которое будет увеличиваься в зависимости от повторения
+    // находим количество повторений в ответах
+    //выводим самое большое число
+    
+// пишем что в зависимости от типа животного массив ьедет менять
 
     private func setHidesBackButton (_ hidesBackButton: Bool, animated: Bool) {
         self.navigationItem.hidesBackButton = true
+    }
+    
+    private func printResultsOfAnswers () {
+        for answers in questionAnswers {
+            print("The answer is \(answers.title). The type of animal is \(answers.type).")
+        }
     }
     
 }
