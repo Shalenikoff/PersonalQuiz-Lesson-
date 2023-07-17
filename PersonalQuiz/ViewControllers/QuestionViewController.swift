@@ -47,7 +47,6 @@ class QuestionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let resultsViewController = segue.destination as? ResultsViewController else { return }
-        
         resultsViewController.questionAnswers = answersChosen
     }
 

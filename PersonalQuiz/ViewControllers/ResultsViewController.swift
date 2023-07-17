@@ -14,7 +14,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet var descriptionResultLabel: UILabel!
     
     //MARK: Lifecycle
-    var questionAnswers: [Answer] = []
+    var questionAnswers: [Answer]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,25 +31,10 @@ class ResultsViewController: UIViewController {
 //MARK: Private methods
 extension ResultsViewController {
     
-    private func rere() {
-        
-    }// функция подсчета количества встречающихся животных в массиве ответов
-    
     private func rerer() {
         
-    }// функция вычленения наиболее часто встречающихся ответов
-
-    private func rererr() {
-        
-    }// функция изменения лейбла resultOfAnswersLabel
+    }
     
-    // логика реализаци
-    //создаем свойство которое будет увеличиваься в зависимости от повторения
-    // находим количество повторений в ответах
-    //выводим самое большое число
-    
-// пишем что в зависимости от типа животного массив ьедет менять
-
     private func setHidesBackButton (_ hidesBackButton: Bool, animated: Bool) {
         self.navigationItem.hidesBackButton = true
     }
