@@ -31,7 +31,7 @@ class ResultsViewController: UIViewController {
 //MARK: Private methods
 extension ResultsViewController {
     
-    private func rerer() {
+    private func updateResult() {
         
     }
     
